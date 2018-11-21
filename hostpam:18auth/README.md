@@ -9,7 +9,7 @@ configurar l'autenticació.
 #### Execució
 
 ```
-docker run --rm --name host -h host --net ldapnet -it hostpam:18auth
+docker run --privileged --rm --name host -h host --net ldapnet -it hostpam:18auth
 ```
 
 #### Utilització

@@ -20,6 +20,7 @@ echo "local06" | passwd --stdin local06
 
 bash /opt/docker/auth.sh
 cp /opt/docker/system-auth /etc/pam.d/system-auth
+cp /opt/docker/pam_mount.conf.xml /etc/security/pam_mount.conf.xml
 cp /opt/docker/ldap.conf /etc/openldap/ldap.conf
 cp /opt/docker/nsswitch.conf /etc/nsswitch.conf
 cp /opt/docker/nslcd.conf /etc/nslcd.conf
