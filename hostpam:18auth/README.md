@@ -9,7 +9,7 @@ configurar l'autenticació.
 #### Execució
 
 ```
-docker run --rm --name host -h host --net ldapnet -it francs2/hostpam:18auth
+docker run --rm --name host -h host --net ldapnet -it hostpam:18auth
 ```
 
 #### Utilització
@@ -20,6 +20,6 @@ getent passwd pau
 getent passwd
 
 getent group localgrp01
-getent group alumnes
+getent group [alumnes, profes]
 getent group
 ```
