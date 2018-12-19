@@ -16,7 +16,7 @@
       <volume 
               user="*" 
 	      fstype="cifs"
-	      server="samba"
+	      server="172.19.0.2"
 	      path="%(USER)" 
               mountpoint="~/%(USER)" 
         />
