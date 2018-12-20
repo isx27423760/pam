@@ -16,7 +16,7 @@
       <volume 
               user="*" 
 	      fstype="cifs"
-	      server="172.19.0.2"
+	      server="172.19.0.3"
 	      path="%(USER)" 
               mountpoint="~/%(USER)" 
         />
