@@ -75,21 +75,21 @@ Es crearan tambe els homes de aquest usuaris ldap i le tindrem que posar els per
 * **SERVER LDAP: ldapserver:18group**
 
 ```
-    $ docker run --rm --name ldap -h ldap --network sambanet -it ldapserver:18group
+    $ docker run --rm --name ldap -h ldap --network sambanet -it francs2/ldapserver:18group
 
 ```
 
 * **SERVER SAMBA: samba:18homes**
 
 ```
-    $ docker run --rm --privileged --name samba -h samba --network sambanet -it samba:18homes
+    $ docker run --rm --privileged --name samba -h samba --network sambanet -it francs2/samba:18homes
 
 ```
 
 * **HOST PAM : hostpam:18samba**
 
 ```
-    $ docker run --rm --privileged --name host -h host --network sambanet -it hostpam:18samba
+    $ docker run --rm --privileged --name host -h host --network sambanet -it francs2/hostpam:18samba
 
 ```
 
