@@ -8,7 +8,7 @@ Repositori d'exemples de containers docker que utilitzen sshclient
 #### Execució
 
 ```
-docker run --privileged --rm --name host -h host --net ldapnet -it francs2/hostpam:18ssh
+docker run --privileged --rm --name host -h host --net sshnet -it francs2/hostpam:18ssh
 ```
 
 #### Utilització
